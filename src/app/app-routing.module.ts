@@ -9,7 +9,7 @@ imports:[
     {path:'welcome', component: WelcomeComponent},
     {path:'', redirectTo:'welcome', pathMatch:'full'},
     {path:'**', component: PageNotFoundComponent}
-  ],{useHash:true}),
+  ],{ useHash: true, relativeLinkResolution: 'legacy' }),
 ],
 exports:[RouterModule]
 })
